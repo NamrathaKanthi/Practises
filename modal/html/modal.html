@@ -1,0 +1,43 @@
+ <!-- Modal content-->
+
+      <div class="modal-content modal-lg" data-ng-controller='mainmodelcontroller as MMC' style="margin-left: -100px;">
+        <div data-ng-include src="'html/firstcontent.html'" data-ng-show="MMC.firstmodal"></div>
+        <div data-ng-include src="'html/secondcontent.html'" data-ng-if="MMC.secondmodal"></div>
+        <div class="modal-footer">
+        <div class="row">
+            <div class="col-md-2 col-sm-2" data-ng-show='MMC.showinfoicon'>
+                <span id='info'><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <div>Information</div>
+            </div>
+            <div class="col-md-2 col-sm-2" data-ng-show='MMC.showinfo1icon'>
+                <span id='info1'><i class="fa fa-info-circle" aria-hidden="true"></i></span>
+                <div>Information</div>
+            </div>
+            <div class="col-md-2 col-sm-2" data-ng-show='MMC.showparamicon'>
+                <span id='paramsa'>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                </span>
+                <div>Parameters</div>
+            </div>
+            <div class="col-md-2 col-sm-2" data-ng-show='MMC.showparam1icon'>
+                <span id='params'>
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                </span>
+                <div>Parameters</div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+            </div>
+            <div class="col-md-4 col-sm-4">
+            <button type="button" class="btn btn-default" data-ng-click="MMC.previous()" data-ng-show="MMC.previous1"><span><i class="fa fa-angle-left" aria-hidden="true"></i></span></button>
+            <button type="button" class="btn btn-default" data-ng-click="MMC.next()"><span><i class="fa fa-angle-right" aria-hidden="true"></i></span></button>
+            <button type="button" class="btn btn-default" data-ng-click="MMC.save()" data-ng-if='MMC.show'>Save</button>
+            <button type="button" class="btn btn-default" data-ng-click="MMC.Generate()" data-ng-if='MMC.generate'>Generate</button>
+            </div>
+        </div>
+            
+        </div>
+            
+      </div>
+
+
+

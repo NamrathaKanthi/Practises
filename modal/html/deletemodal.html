@@ -1,0 +1,13 @@
+<div class="modal-content" data-ng-controller='maincontroller as MNC'>
+                <div class="modal-header">
+                    <button type="button" class="close" data-ng-click="MNC.closeModal()">&times;</button>
+                    <h4 class="modal-title">Alert</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure want to delete this??</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-ng-click="MNC.deletedata($parent.$index)">Okay</button>
+                    <button type="button" class="btn btn-default" data-ng-click="MNC.closeModal()">Cancel</button>
+                </div>
+            </div>
